@@ -3,6 +3,8 @@
 
 This project provides a powerful integration between DEVONthink 3 and Python to automatically generate interactive HTML graphs of outgoing and incoming Wiki-links of your Markdown notes. The graphs are stored directly in your DEVONthink database and can update the source file to display an embed. Furthermore, you have the choice to visualize the graph with a static pre-calculated layout or activate a physics engine for dynamic interaction. This allows you to explore your knowledge network in a visually appealing and intuitive way, making it easier to discover connections between and clusters within your notes.
 
+![img](figures/example_1.png)
+
 ## 🚀 Features
 * **Dynamic Graphs:** Generates interactive network graphs (based on `pyvis`/`vis.js`) of your Markdown note connections.  
 * **Dual Graph Display:** The generated HTML file initially displays a static, pre-calculated connection graph (using `networkx`). Below this, there's an option to activate the physics engine (provided by `pyvis`), which simulates a more comprehensive and dynamic graph layout. This approach prioritizes initial load speed and offers the user control over computationally intensive simulations, which may not always be necessary as the `networkx` pre-calculation often provides good clustering. 
@@ -11,6 +13,8 @@ This project provides a powerful integration between DEVONthink 3 and Python to 
 * * **DEVONthink Embedding:** Saves the graph as `nlink_<UUID>.html` and optionally embeds it into the source Markdown note via `<iframe>`.
 * **User-Friendly:** Launches directly from DEVONthink via an AppleScript.  
 * **Parallelization:** The Python script utilizes `joblib` for faster link detection in large datasets.
+
+![img](figures/example_2.png)
 
 ## 🔗 Connection logic
 This script focuses on visualizing a specific "neighborhood" of your selected Markdown note(s) to create a focused knowledge network. Here's how connections are analyzed and included:
