@@ -53,7 +53,7 @@ pip install pydt3 pyvis networkx
 ### 3. Configure the AppleScript (optional)
 The following steps are only necessary if you have used a different Conda environment name than `dt_python`:
 
-1. Open the AppleScript `Find note connections.scpt` located inside the `Find Note Connections` folder with the **Script Editor** on your Mac.
+1. Open the AppleScript `Find and add note connections.scpt` located inside the `Find Note Connections` folder with the **Script Editor** on your Mac.
 2. If you have used a different name for your Conda environment than `dt_python`, adjust the value of the `CONDA_ENV_NAME` property at the top of the script accordingly.
 3. Save the AppleScript. 
 
@@ -62,7 +62,7 @@ No further configuration is needed. The paths to your Python script and Conda in
 
 ## 🚀 Usage
 1. **In DEVONthink 3, select one or more Markdown notes** for which you want to visualize the connections.
-2. Go to the menu bar and select **Scripts > Find Note Connections**.
+2. Go to the menu bar and select **Scripts > Find Note Connections > Find and add note connections**.
 3. The script will execute, and after a short time (depending on the number of connections):
    * A new HTML record named `nlink_<UUID_of_Markdown_note>.html` will be generated or updated in the `_nlinks` folder (created if needed; you can place that folder afterwards wherever you'd like to).
    * The selected Markdown note will be updated at the end with a link and an `<iframe>` to the generated HTML graph (if not already present; if present, the link will be updated).
