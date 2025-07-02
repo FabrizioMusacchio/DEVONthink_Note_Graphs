@@ -35,7 +35,7 @@ This script focuses on visualizing a specific "neighborhood" of your selected Ma
 ## 📦 Installation
 Follow these steps carefully to set up the script.
 
-### 1. Set up conda environment
+### 1. Set up conda environment (required)
 Open your Terminal and execute the following commands (the name `dt_python` can be customized):  
 
 ```bash
@@ -45,7 +45,7 @@ mamba install ipykernel numpy joblib tqdm -y
 pip install pydt3 pyvis networkx
 ```
 
-### 2. Download and place the scripts
+### 2. Download and place the scripts (required)
 1. Download and extract this repository.
 2. Navigate to the DEVONthink script folder via DEVONthink's script menu -> **Open Scripts Folder**.  
 3. In DEVONthink, go to `Scripts` > `Open Scripts Folder`, which opens `~/Library/Application Scripts/com.devon-technologies.think3/`. Therein, navigate to the `Menu` folder. Move the entire `Find Note Connections` folder there.
@@ -113,7 +113,6 @@ The script folder `Find Note Connections` contains a sub-folder called `scripts`
   * **Solution:** Check DEVONthink permissions for the script.
 * **DEVONthink To Go:**
   * **Note:** You **cannot create graphs on iOS**, but the generated interactive HTML files (including the physics engine) **work flawlessly in DEVONthink To Go**, where you can view and interact with them.
-
 
 
 ## 🚧 Known limitations
